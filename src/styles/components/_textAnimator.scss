@@ -1,0 +1,30 @@
+.text-animator-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.text-animator {
+  flex: 1;
+  font-size: 4em;
+  text-align: left;
+  padding-right: 2rem;
+  font-family: $font-family-primary;
+  margin-right: 4rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.dynamic-text {
+  display: inline-block;
+  white-space: normal;
+  overflow: hidden;
+  font-weight: $font-weight-bold;
+  width: 100%;
+  border-right: none;
+  animation: none;
+}

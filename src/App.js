@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './styles/index.scss'; 
+
+import Main from './components/Main';
+import Navigation from './components/Navigation';
 
 function App() {
+  const [selectedTab, setSelectedTab] = useState('Home');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Main selectedTab={selectedTab} />
+      <Navigation setSelectedTab={setSelectedTab} />
     </div>
   );
 }

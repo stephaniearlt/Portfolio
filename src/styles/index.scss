@@ -1,0 +1,99 @@
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+@import "./components/textAnimator";
+@import "./components/socialMedia";
+@import "./components/project";
+@import "./components/projectsPage";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* GENERALITES */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+
+  // Empêche le défilement au-delà de l'écran
+  font-family: $font-family-primary;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  // Utilise la hauteur totale de l'écran
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* MAIN */
+
+// Style spécifique pour la page d'accueil
+
+.main-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* Pas de défilement */
+}
+
+// Style pour les autres pages
+
+.main-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* Aligne en haut */
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  /* Permet le défilement si le contenu dépasse */
+}
+
+/* FOOTER / NAVIGATION */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  padding: 1em;
+  text-align: center;
+}
+
+button {
+  background-color: $primary-color;
+  font-family: 'Courier Prime', monospace;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

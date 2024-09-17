@@ -1,0 +1,34 @@
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 1.875rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur */
+
+  a {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    i {
+      margin-right: 20px;
+    }
+  }
+}
