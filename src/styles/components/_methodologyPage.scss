@@ -1,24 +1,18 @@
 .methodology-container {
-  padding: 1rem;
-
-  .section-title {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
+  padding: 2rem;
 
   .methodology-sections {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
+    margin-top: 3rem;
   }
 
   .methodology-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex: 1;
     min-width: 300px;
     background: #fff;
@@ -35,7 +29,7 @@
     }
 
     p {
-      margin-bottom: 2rem;
+      margin: 0 0 1rem; 
     }
 
     .keywords {
@@ -75,16 +69,12 @@
   }
 
   .summary-box {
-    margin-top: 2rem;
-    padding: 1rem;
-    background: #e0e0e0;
-    border-radius: 8px;
-    text-align: center;
+    padding: 2rem; 
+    text-align: left;
 
     p {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #333;
+      margin: 0 auto 1rem; 
+      max-width: 1000px; 
     }
   }
 }

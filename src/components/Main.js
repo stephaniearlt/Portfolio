@@ -2,6 +2,8 @@ import React from "react";
 import TextAnimator from "./TextAnimator";
 import ProjectsPage from "./ProjectsPage";
 import MethodologyPage from "./MethodologyPage";
+import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
 
 function Main({ selectedTab }) {
   const isHomePage = selectedTab === "Home";
@@ -13,9 +15,9 @@ function Main({ selectedTab }) {
       case "Méthodologie":
         return <MethodologyPage />;
       case "A propos":
-        return <div>Contenu pour À Propos</div>;
+        return <AboutPage />;
       case "Contact":
-        return <div>Contenu pour Contact</div>;
+        return <ContactPage />
       default:
         return <TextAnimator />;
     }
