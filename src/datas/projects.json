@@ -107,10 +107,10 @@
     "githubLink": "https://github.com/stephaniearlt/Kasa",
     "websiteLink": "https://kasa-from-arlt.netlify.app/",
     "lighthouseScores": {
-      "performance": "79",
+      "performance": "85",
       "accessibility": "94",
       "bestPractices": "100",
-      "seo": "92"
+      "seo": "100"
     },
     "image": "kasa.webp"
   },

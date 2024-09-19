@@ -22,7 +22,6 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  border-color: $primary-color;
 }
 
 .project-image {
@@ -37,12 +36,55 @@
   flex: 0 0 60%;
   padding-left: 50px;
 
-  h2 {
-    color: $primary-color;
+  p {
+    margin-bottom: 1rem;
   }
 
-  p {
-    line-height: 1.5;
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .technology {
+    display: inline-block;
+    background: $tertiary-color;
+    border-radius: 4px;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .lighthouse-scores {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .score {
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .score-good {
+    background: #e8f5e9; // $tag-secondary-color: #e8f5e9
+  }
+
+  .score-medium {
+    background: #fff3e0; // Orange pastel
+  }
+
+  .score-bad {
+    background: #ffebee; // Rouge pastel
+  }
+  .score-label {
+    margin-right: 0.5rem;
   }
 }
 
