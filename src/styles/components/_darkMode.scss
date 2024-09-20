@@ -1,0 +1,75 @@
+.app.dark {
+  background-color: $color-black;
+  color: $color-white;
+
+  .dynamic-text {
+    color: $color-electric-blue;
+  }
+
+  h1 {
+    color: $color-white;
+  }
+
+  .about-container span {
+    color: $color-white;
+  }
+
+  .project {
+    .technologies {
+      color: $color-black;
+    }
+
+    .lighthouse-scores {
+      color: $color-black;
+      .score-label {
+        color: $color-black;
+      }
+    }
+  }
+
+  .links-column i {
+    color: $color-white !important;
+
+    &:hover {
+      color: $color-electric-blue !important;
+    }
+  }
+
+  .methodology-container {
+    .keywords {
+      .keyword {
+        color: $color-black;
+      }
+    }
+
+    .key-stat {
+      .stat-value {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.dark-mode-switch {
+  margin-left: auto;
+}
+
+.switch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: $color-electric-blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: darken($color-electric-blue, 10%);
+}

@@ -11,15 +11,14 @@ const MethodologyPage = () => {
 
   return (
     <div className="methodology-container">
-      <h1 className="section-title">Méthodologie</h1>
+      <h1>Méthodologie</h1>
 
-      <div className="summary-box">
-        <p>
-          Ces approches vous garantissent une collaboration efficace, flexible
-          et orientée vers les résultats, pour des projets menés avec rigueur et
-          sérénité.
-        </p>
-      </div>
+      <p className="intro">
+        Ces approches vous garantissent une collaboration efficace, flexible et
+        orientée vers les résultats, pour des projets menés avec rigueur et
+        sérénité.
+      </p>
+
       <div className="methodology-sections">
         {methodologies.map((method, index) => (
           <div className="methodology-block" key={index}>

@@ -19,7 +19,7 @@ function TextAnimator() {
 
     const timeoutId = setTimeout(() => {
       if (!isDeleting && text === currentText) {
-        setTimeout(() => setIsDeleting(true), 1500); // Pause avant suppression
+        setTimeout(() => setIsDeleting(true), 1200); // Pause avant suppression
       } else if (isDeleting && text === "") {
         setIsDeleting(false);
         setIndex((prevIndex) => (prevIndex + 1) % dynamicTexts.length);

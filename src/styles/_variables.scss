@@ -1,9 +1,21 @@
 // Variables de couleurs
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$tertiary-color: whitesmoke;
-$tag-primary-color:$primary-color;
-$tag-secondary-color: #e8f5e9;
+
+// Couleurs de base
+$color-black: #121212; 
+$color-white: #FAFAFA; 
+$color-dark-gray: #1A1A1A; 
+$color-light-gray: #F5F5F5; 
+$color-electric-blue: #007BFF;
+
+// État des éléments
+$color-success: #e8f5e9; 
+$color-warning:#fff3e0; 
+$color-danger: #ffebee; 
+
+// Texte
+$color-text-dark: $color-black; 
+$color-text-light: $color-white; 
+$color-text-muted: #666666; 
 
 // Variables de police
 $font-family-primary: 'Courier Prime', monospace;

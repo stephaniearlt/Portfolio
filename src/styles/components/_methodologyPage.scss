@@ -1,80 +1,68 @@
 .methodology-container {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .methodology-sections {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-  }
+.methodology-sections {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-  .methodology-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 1rem;
+.methodology-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .methodology-image {
+    width: 150px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
 
-    .methodology-image {
-      width: 150px;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
+  .keywords {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
 
-    p {
-      margin: 0 0 1rem; 
-    }
-
-    .keywords {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1rem;
-
-      .keyword {
-        display: inline-block;
-        font-weight: $font-weight-bold;
-        background: $tertiary-color;
-        border-radius: 4px;
-        padding: 0.5rem;
-        margin-right: 0.5rem;
-        margin-bottom: 1rem;
-      }
-    }
-
-    .key-stat {
-      background: $tag-secondary-color;
-      padding: 1rem;
+    .keyword {
+      display: inline-block;
+      font-weight: $font-weight-bold;
+      background: whitesmoke;
       border-radius: 4px;
-      text-align: center;
-
-      .stat-value {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      .stat-label {
-        display: block;
-        font-size: 1rem;
-        color: #666;
-      }
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
     }
   }
 
-  .summary-box {
-    padding: 2rem; 
-    text-align: left;
+  .key-stat {
+    background: $color-success;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
 
-    p {
-      margin: 0 auto 1rem; 
-      max-width: 1000px; 
+    .stat-value {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 1rem;
+      color: #666;
     }
   }
 }

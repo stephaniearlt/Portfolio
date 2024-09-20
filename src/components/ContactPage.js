@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <section className="contact-section">
       <h1>Me contacter</h1>
-      <p>
+      <p className="intro">
         La meilleure façon de me contacter est d’écrire à{" "}
         <a href="mailto:contact@stephaniearlt.fr">contact@stephaniearlt.fr</a>.
         Je lis tous les messages et m’efforce d’y répondre sous trois jours

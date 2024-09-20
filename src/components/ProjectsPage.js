@@ -11,9 +11,9 @@ const ProjectsPage = () => {
   }, []);
 
   return (
-    <div className="projects-page">
+    <div className="projects-container">
       <h1>Mes Projets</h1>
-      <p>
+      <p className="intro">
         Découvrez une sélection de projets développés avec des technologies modernes, 
         mettant en avant mon expertise dans la création de solutions web performantes, 
         intuitives et accessibles. Chaque réalisation est pensée pour répondre à des 

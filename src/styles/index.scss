@@ -3,11 +3,11 @@
 @import "./fonts";
 @import "./components/textAnimator";
 @import "./components/socialMedia";
-@import "./components/project";
 @import "./components/projectsPage";
 @import "./components/methodologyPage";
 @import "./components/aboutPage";
 @import "./components/contactPage";
+@import "./components/darkMode";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 /* GENERALITES */
@@ -17,14 +17,15 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; // Empêche le défilement au-delà de l'écran
   font-family: $font-family-primary;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  height: 100vh; // Utilise la hauteur totale de l'écran
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .app {
@@ -33,13 +34,17 @@ body {
   height: 100%;
 }
 
-main {
-  flex: 1;
+h1 {
+  font-size: 2rem;
+  color: $color-black;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: $primary-color;
+  color: $color-electric-blue;
 }
 
 p {
@@ -52,47 +57,76 @@ p {
 
 .main-centered {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  box-sizing: border-box;
 }
 
 // Style pour les autres pages
 
+main {
+  flex: 1;
+}
+
 .main-default {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Aligne en haut */
-  align-items: center;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
   padding: 1em;
-  box-sizing: border-box;
   overflow-y: auto; /* Permet le défilement si le contenu dépasse */
 }
 
-/* FOOTER / NAVIGATION */
+/* Style pour la barre de défilement */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-electric-blue;
+  border-radius: 5px;
+}
+
+/* Pour Firefox */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: $color-electric-blue;
+}
+
+/* INTRO */
+
+.intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+/* NAVIGATION */
 
 footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: $secondary-color;
+  background-color: $color-black;
   padding: 1em;
-  text-align: center;
+  position: relative;
+
+  @media (max-width: 580px) {
+    display: block;
+  }
+}
+
+.logo-button {
+  margin-right: auto;
+}
+
+.logo {
+  height: 25px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 button {
-  background-color: $primary-color;
+  background-color: $color-electric-blue;
   font-family: "Courier Prime", monospace;
-  color: #fff;
   border: none;
   padding: 0.5em 1em;
   margin: 0.5em;
@@ -100,6 +134,6 @@ button {
   border-radius: 5px;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: darken($color-electric-blue, 10%);
   }
 }

@@ -1,26 +1,41 @@
 [
   {
     "title": "Agile",
-    "description": "Travailler avec moi signifie avancer ensemble, avec fluidité et réactivité. Mon approche Agile me permet de m’adapter rapidement à vos besoins, tout en restant focalisée sur les priorités. Je privilégie une communication ouverte et régulière pour que vous soyez toujours au cœur des décisions. Chaque étape du projet est une opportunité d’améliorer le produit, tout en assurant une livraison rapide et continue des fonctionnalités.",
-    "keywords": ["Flexibilité", "Collaboration continue", "Réactivité", "Résultats tangibles"],
+    "description": "Travailler avec moi, c'est avancer ensemble avec fluidité et réactivité. Mon approche Agile s’adapte rapidement à vos besoins tout en restant centrée sur les priorités. Je privilégie une communication ouverte et régulière pour que vous soyez toujours au cœur des décisions. Chaque étape est une opportunité d'améliorer le produit, tout en assurant une livraison rapide et continue des fonctionnalités.",
+    "keywords": [
+      "Flexibilité",
+      "Collaboration",
+      "Réactivité",
+      "Résultats tangibles"
+    ],
     "stat": "35%",
-    "statLabel": "Augmentation de la productivité",
+    "statLabel": "Productivité augmentée",
     "image": "/images/agile.webp"
   },
   {
     "title": "Scrum",
     "description": "Avec Scrum, je vous accompagne dans un cadre structuré et efficace. En découpant le projet en objectifs clairs et atteignables, vous avez une vision précise de l’avancement à chaque étape. Grâce à des revues régulières, je m’assure que chaque sprint vous rapproche de vos attentes. C’est une méthodologie qui renforce la transparence et la productivité, tout en vous impliquant activement tout au long du processus.",
-    "keywords": ["Structure", "Objectifs mesurables", "Transparence", "Avancement clair"],
+    "keywords": [
+      "Structure",
+      "Objectifs mesurables",
+      "Transparence",
+      "Avancement clair"
+    ],
     "stat": "50%",
-    "statLabel": "Réduction des cycles de développement",
+    "statLabel": "Cycles de développement réduits",
     "image": "/images/scrum.webp"
   },
   {
-  "title": "Kanban",
-  "description": "Avec Kanban, je vous garantis une gestion fluide et visuelle du travail. Vous verrez clairement comment chaque tâche progresse, de sa conception à sa finalisation. Cette méthode me permet de prioriser efficacement, tout en évitant les blocages. Chaque étape du processus est visible et ajustable, ce qui nous permet de nous adapter rapidement aux changements tout en maintenant une haute qualité de livraison.",
-  "keywords": ["Priorisation", "Gestion fluide", "Suivi visuel", "Sérénité"],
-  "stat": "40%",
-  "statLabel": "Amélioration du flux de travail",
-  "image": "/images/kanban.webp"
-}
+    "title": "Kanban",
+    "description": "Avec Kanban, je vous garantis une gestion fluide et visuelle du travail. Vous verrez clairement comment chaque tâche progresse, de sa conception à sa finalisation. Cette méthode me permet de prioriser efficacement, tout en évitant les blocages. Chaque étape du processus est visible et ajustable, ce qui nous permet de nous adapter rapidement aux changements tout en maintenant une haute qualité de livraison.",
+    "keywords": [
+      "Priorisation",
+      "Gestion fluide",
+      "Suivi visuel",
+      "Sérénité"
+    ],
+    "stat": "40%",
+    "statLabel": "Flux de travail améliorée",
+    "image": "/images/kanban.webp"
+  }
 ]

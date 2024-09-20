@@ -1,29 +1,8 @@
-.about-intro {
-  width: 85%;
-  margin: 0 auto;
+.about-container {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  p {
-    margin: 0 0 1rem;
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  .profile-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 1rem auto;
-    display: block;
-  }
-}
-
-.section-title {
-  margin-bottom: 6.25rem;
 }
 
 .about-sections {
@@ -31,8 +10,8 @@
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 6.25rem;
-  margin-bottom: 6.25rem;
+  margin: 3rem;
+  margin-bottom: 0px;
 }
 
 .about-block {
@@ -42,10 +21,6 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
-
-  h2 {
-    margin-top: 0;
-  }
 
   p {
     margin: 4rem 0;
@@ -62,12 +37,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $primary-color;
+    color: $color-electric-blue;
     transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
       transform: scale(1.1);
-      color: $secondary-color;
+      color: $color-text-muted;
     }
 
     svg {

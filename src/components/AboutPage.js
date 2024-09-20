@@ -12,23 +12,21 @@ import {
 const AboutPage = () => {
   return (
     <div className="about-container">
-      <div className="about-intro">
-        <h1 className="section-title">À propos</h1>
-        <p>
-          Bonjour, je suis Stéphanie Arlt, passionnée de technologie et fervente
-          croyante dans son pouvoir de transformer positivement notre monde.
-          Spécialisée dans le développement informatique éco-conçu et
-          accessible, je m'engage à transformer vos idées en applications web
-          performantes, innovantes et responsables, avec une attention
-          particulière aux aspects environnementaux et humains.
-        </p>
-        <p>
-          En tant que développeuse web, je crée des applications réactives avec
-          React et Redux et intègre des technologies back-end comme Node.js,
-          Express et MongoDB. Mon expertise couvre tous les aspects du
-          développement web, de l'interface utilisateur au back-end.
-        </p>
-      </div>
+      <h1>À propos</h1>
+      <p className="intro">
+        Bonjour, je suis Stéphanie Arlt, passionnée de technologie et fervente
+        croyante dans son pouvoir de transformer positivement notre monde.
+        Spécialisée dans le développement informatique éco-conçu et accessible,
+        je m'engage à transformer vos idées en applications web performantes,
+        innovantes et responsables, avec une attention particulière aux aspects
+        environnementaux et humains.
+        <br />
+        <br />
+        En tant que développeuse web, je crée des applications réactives avec
+        React et Redux et intègre des technologies back-end comme Node.js,
+        Express et MongoDB. Mon expertise couvre tous les aspects du
+        développement web, de l'interface utilisateur au back-end.
+      </p>
 
       <div className="about-sections">
         <div className="about-block">
@@ -80,7 +78,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="about-block">
-          <h2>Engagement</h2>
+          <h2>Engagement Éthique</h2>
           <p>
             Mon engagement envers l'accessibilité et la qualité web est renforcé
             par une formation spécialisée avec Access42 et une utilisation

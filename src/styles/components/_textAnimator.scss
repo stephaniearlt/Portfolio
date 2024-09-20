@@ -1,30 +1,36 @@
 .text-animator-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .text-animator {
-  flex: 1;
   font-size: 4em;
-  text-align: left;
-  padding-right: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
   font-family: $font-family-primary;
-  margin-right: 4rem;
 
   p {
     margin: 0;
   }
-}
 
+  @media (max-width: 1024px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5em;
+  }
+}
 .dynamic-text {
+  width: 100%;
   display: inline-block;
-  white-space: normal;
+  white-space: nowrap;
   overflow: hidden;
   font-weight: $font-weight-bold;
-  width: 100%;
   border-right: none;
   animation: none;
+  min-height: 1.5em;
 }
