@@ -1,6 +1,5 @@
 .text-animator-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -24,6 +23,7 @@
     font-size: 2.5em;
   }
 }
+
 .dynamic-text {
   width: 100%;
   display: inline-block;
@@ -33,4 +33,9 @@
   border-right: none;
   animation: none;
   min-height: 1.5em;
+
+  @media (max-width: 426px) {
+    white-space: normal;
+    text-align: center;
+  }
 }

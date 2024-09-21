@@ -1,3 +1,44 @@
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
+
+@mixin container-sizing($max-width) {
+  width: 100%;
+  max-width: $max-width;
+  min-width: $min-width-mobile;
+  margin: 0 auto;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin container-style {
+  padding: 2rem;
+  @include flex-column;
+  align-items: center;
+}
+
+@mixin section-style {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 376px) {
+    padding: 0;
+  }
+}
+
+@mixin small-screen-padding {
+  @media (max-width: 321px) {
+    padding: 0;
+
+    h2,
+    p {
+      padding: 15px;
+    }
+  }
+}

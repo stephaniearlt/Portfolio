@@ -1,4 +1,4 @@
-// Variables de couleurs
+/* Variables de couleurs */
 
 // Couleurs de base
 $color-black: #121212; 
@@ -17,7 +17,14 @@ $color-text-dark: $color-black;
 $color-text-light: $color-white; 
 $color-text-muted: #666666; 
 
-// Variables de police
+/* Variables de polices */
+
 $font-family-primary: 'Courier Prime', monospace;
 $font-weight-normal: normal;
 $font-weight-bold: bold;
+
+/* Variables de tailles */
+
+$max-width-desktop: 1440px;
+$max-width-large: 3840px;
+$min-width-mobile: 320px;

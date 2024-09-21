@@ -1,8 +1,11 @@
 .projects-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   padding: 2rem;
+
+  @media (max-width: 426px) {
+    padding: 1rem;
+  }
 }
 
 .project {
@@ -48,6 +51,11 @@
   flex: 0 0 60%;
   padding-left: 50px;
 
+  @media (max-width: 426px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   p {
     margin-bottom: 1rem;
   }
@@ -62,7 +70,7 @@
 
   .technology {
     display: inline-block;
-    background: whitesmoke;
+    background: $color-light-gray;
     border-radius: 4px;
     padding: 0.4rem;
     margin-right: 0.5rem;
@@ -74,6 +82,11 @@
     gap: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 426px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .score {
@@ -102,10 +115,9 @@
 
 .links-column {
   flex: 0 0 15%;
-  display: flex;
+  @include flex-column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
 
   a {
@@ -122,14 +134,14 @@
   }
 
   @media (max-width: 1024px) {
-    flex-direction: row; 
+    flex-direction: row;
     a {
-      margin-top: 10px; 
-      margin-right: 1.5rem; 
+      margin-top: 10px;
+      margin-right: 1.5rem;
     }
 
     a:last-child {
-      margin-right: 0; 
+      margin-right: 0;
     }
   }
 }

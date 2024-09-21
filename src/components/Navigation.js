@@ -10,7 +10,7 @@ function Navigation({ setSelectedTab, isDarkMode, toggleDarkMode }) {
       <div className="nav-buttons">
         <button onClick={() => setSelectedTab('Projets')}>Projets</button>
         <button onClick={() => setSelectedTab('Méthodologie')}>Méthodologie</button>
-        <button onClick={() => setSelectedTab('A propos')}>A propos</button>
+        <button onClick={() => setSelectedTab('A propos')}>À propos</button>
         <button onClick={() => setSelectedTab('Contact')}>Contact</button>
       </div>
       <div className="dark-mode-switch">

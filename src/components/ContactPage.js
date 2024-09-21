@@ -6,7 +6,7 @@ const reason3 = "/images/progression.webp";
 
 const ContactPage = () => {
   return (
-    <section className="contact-section">
+    <div className="contact-container">
       <h1>Me contacter</h1>
       <p className="intro">
         La meilleure façon de me contacter est d’écrire à{" "}
@@ -14,7 +14,7 @@ const ContactPage = () => {
         Je lis tous les messages et m’efforce d’y répondre sous trois jours
         ouvrés.
       </p>
-      <div className="contact-reasons">
+      <div className="contact-sections">
         <div className="reason">
           <img
             src={reason1}
@@ -58,7 +58,7 @@ const ContactPage = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
