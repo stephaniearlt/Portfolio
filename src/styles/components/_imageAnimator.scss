@@ -1,0 +1,41 @@
+.image-container {
+  height: 100px; 
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; /* Cacher l'image si elle dépasse */
+}
+
+.animated-image {
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: zoomIn 1s ease forwards; 
+  transform: scale(0); /* Image cachée au départ */
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 1s ease forwards; 
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

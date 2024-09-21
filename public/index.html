@@ -14,8 +14,6 @@
       name="description"
       content="Bienvenue sur mon portfolio, dédié au développement web éco-responsable et accessible."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Développement Web Éco-Responsable</title>
     <meta
@@ -40,5 +38,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      // Charger Font Awesome après que le DOM est chargé
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href =
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+      document.head.appendChild(link);
+    </script>
   </body>
 </html>
