@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
 import methodologyData from "../datas/methodology.json";
 
-const MethodologyPage = () => {
-  const [methodologies, setMethodologies] = useState([]);
+// Définir l'interface pour la méthodologie
+interface Methodology {
+  id: string; 
+  image: string;
+  title: string;
+  description: string;
+  keywords: string[];
+  stat: string;
+  statLabel: string;
+}
+
+const Methodologie: React.FC = () => {
+  // Typage de l'état pour être un tableau de Methodology
+  const [methodologies, setMethodologies] = useState<Methodology[]>([]);
 
   // Charger les données du fichier JSON
   useEffect(() => {
@@ -10,7 +22,7 @@ const MethodologyPage = () => {
   }, []);
 
   return (
-    <div className="methodology-container">
+    <main className="methodology-container" role="main">
       <h1>Méthodologie</h1>
 
       <p className="intro">
@@ -19,13 +31,15 @@ const MethodologyPage = () => {
         sérénité.
       </p>
 
-      <div className="methodology-sections">
-        {methodologies.map((method, index) => (
-          <div className="methodology-block" key={index}>
+      <section className="methodology-sections">
+        {methodologies.map((method) => (
+          <article className="methodology-block" key={method.id}>
             <img
               src={method.image}
-              alt={`${method.title} Method`}
+              alt="" // Image décorative, alt vide
               className="methodology-image"
+              width="150"
+              height="150"
             />
             <h2>{method.title}</h2>
             <p>{method.description}</p>
@@ -40,11 +54,11 @@ const MethodologyPage = () => {
               <span className="stat-value">{method.stat}</span>
               <span className="stat-label">{method.statLabel}</span>
             </div>
-          </div>
+          </article>
         ))}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
-export default MethodologyPage;
+export default Methodologie;

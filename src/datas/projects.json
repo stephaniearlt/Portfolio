@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "GreenTax",
     "description": "GreenTax est un site vitrine conçu pour une entreprise fictive dans le domaine de la gestion commerciale et financière. À travers ce projet imaginé de toute pièce, j’ai cherché à démontrer ma capacité à réaliser une veille efficace pour identifier, intégrer et développer des idées innovantes. L’interface utilisateur est dynamique et engageante, intégrant des animations et un affichage du contenu interactif pour une expérience fluide. En plus de ses fonctionnalités principales, le design est structuré pour permettre une extension future vers un espace membre, offrant ainsi des fonctionnalités personnalisées et interactives.",
     "technologies": [
@@ -10,14 +11,15 @@
     "githubLink": "https://github.com/stephaniearlt/GreenTax.git",
     "websiteLink": "https://greentax.stephaniearlt.fr/index.html",
     "lighthouseScores": {
-      "performance": "90",
-      "accessibility": "94",
-      "bestPractices": "96",
-      "seo": "100"
+      "performance": 90,
+      "accessibility": 94,
+      "bestPractices": 96,
+      "seo": 100
     },
     "image": "greentax.webp"
   },
   {
+    "id": 2,
     "title": "Argent Bank",
     "description": "Argent Bank est une application bancaire moderne composée d'une interface utilisateur dynamique. Ce MVP (Minimum Viable Product) présente un tableau de bord complet et responsive qui se connecte au back-end via des appels API REST. J'ai également travailler sur l'écriture des futures routes API pour récupérer/consulter/modifier les données des transactions par compte, et gérer la sécurité globale de l'application. ",
     "technologies": [
@@ -27,13 +29,14 @@
     "githubLink": "https://github.com/stephaniearlt/Argent-Bank",
     "websiteLink": "https://www.loom.com/share/ea0afc23a0d14d7a9d47432273b5cfad?sid=640ebf3b-da55-40de-af45-84ded5a524af",
     "lighthouseScores": {
-      "performance": "99",
-      "accessibility": "100",
-      "bestPractices": "100",
-      "seo": "100"
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100
     },
     "image": "argent_bank.webp"
   },{
+    "id": 3,
     "title": "Iban Validator",
     "description": "Iban Validator est une fonctionnalité essentielle qui permet de vérifier instantanément la validité d'un IBAN saisi par l'utilisateur. Ce module peut être facilement intégré à un site vitrine dédié à la gestion comptable, notamment dans une section simulateur ou calculateur. Il offre à vos clients une assurance supplémentaire en évitant les erreurs de saisie d'IBAN, qui peuvent entraîner des frais bancaires inutiles lors de tentatives de transfert d'argent vers des comptes inexistants ou erronés.",
     "technologies": [
@@ -42,13 +45,14 @@
     "githubLink": "https://github.com/stephaniearlt/Iban-Validator",
     "websiteLink": "https://iban-validator-from-arlt.netlify.app/",
     "lighthouseScores": {
-      "performance": "100",
-      "accessibility": "86",
-      "bestPractices": "100",
-      "seo": "90"
+      "performance": 100,
+      "accessibility": 86,
+      "bestPractices": 100,
+      "seo": 90
     },
     "image": "iban_validator.webp"
   },{
+    "id": 4,
     "title": "Sophie Bluel",
     "description": "Sophie Bluel est un site portfolio permettant à l'administratrice de gérer ses créations en ajoutant ou supprimant des œuvres facilement. J'ai développé plusieurs fonctionnalités dynamiques, notamment : un formulaire de connexion sécurisé, la récupération des créations via une API et la création de modales imbriquées pour supprimer des travaux et en télécharger de nouveaux. ",
     "technologies": [
@@ -59,13 +63,14 @@
     "githubLink": "https://github.com/stephaniearlt/Sophie-Bluel",
     "websiteLink": "https://www.loom.com/share/4e7d04086fd445cfa5c32f76055b4388?sid=88b91a0d-1056-4273-a21c-9d47c7831477",
     "lighthouseScores": {
-      "performance": "78",
-      "accessibility": "94",
-      "bestPractices": "96",
-      "seo": "91"
+      "performance": 78,
+      "accessibility": 94,
+      "bestPractices": 96,
+      "seo": 91
     },
     "image": "sophie_bluel.webp"
   },{
+    "id": 5,
     "title": "Lambda",
     "description": "Pour un projet d'intégration de maquette graphique pour un restaurant gastronomique, j'ai veillé à respecter les choix du designer en intégrant des styles personnalisés pour le menu de navigation, les menus proposés, ainsi que le formulaire de contact. Travailler avec un constructeur de page a facilité certaines tâches en termes de gain de temps, mais intégrer des effets complexes s'est avéré plus délicat qu'avec du HTML et CSS classiques. J'ai surmonté ces défis pour offrir un rendu fidèle aux attentes visuelles du projet.",
     "technologies": [
@@ -74,13 +79,14 @@
     ],
     "websiteLink": "https://lambda.stephaniearlt.fr/",
     "lighthouseScores": {
-      "performance": "95",
-      "accessibility": "96",
-      "bestPractices": "96",
-      "seo": "92"
+      "performance": 95,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 92
     },
     "image": "lambda.webp"
   },{
+    "id": 6,
     "title": "Movies",
     "description": "Movies est une application web qui permet de rechercher des films par genre, de filtrer les résultats par classement (Top ou Flop), de sauvegarder ses films préférés en fonction des résultats proposés. Pour assurer le bon fonctionnement de l'application, une lecture approfondie de la documentation de l'API externe TMDb s'est avérée indispensable, afin de garantir une intégration fluide et optimale des données. ",
     "technologies": [
@@ -90,14 +96,15 @@
     "githubLink": "https://github.com/stephaniearlt/Movies",
     "websiteLink": "https://movies-from-arlt.netlify.app/",
     "lighthouseScores": {
-      "performance": "79",
-      "accessibility": "99",
-      "bestPractices": "100",
-      "seo": "100"
+      "performance": 79,
+      "accessibility": 99,
+      "bestPractices": 100,
+      "seo": 100
     },
     "image": "movies.webp"
   },
   {
+    "id": 7,
     "title": "Kasa",
     "description": "Grâce à plus de 500 annonces postées quotidiennement, Kasa s'impose comme l'un des leaders de la location d'appartements entre particuliers en France. J'ai participé à la refonte technologique du site afin de créer une expérience utilisateur moderne et fluide. Dans ce projet, j'ai implémenté le front-end de l'application en utilisant React et React Router pour gérer la navigation entre les pages. J'ai travaillé sur la logique de présentation des données, en construisant des composants React basés sur les maquettes fournies, tout en utilisant des données simulées à partir d'un fichier JSON.",
     "technologies": [
@@ -107,14 +114,15 @@
     "githubLink": "https://github.com/stephaniearlt/Kasa",
     "websiteLink": "https://kasa-from-arlt.netlify.app/",
     "lighthouseScores": {
-      "performance": "85",
-      "accessibility": "94",
-      "bestPractices": "100",
-      "seo": "100"
+      "performance": 85,
+      "accessibility": 94,
+      "bestPractices": 100,
+      "seo": 100
     },
     "image": "kasa.webp"
   },
   {
+    "id": 8,
     "title": "DEVM5",
     "description": "Afin de parfaire mes techniques en développement web, j’ai reproduit la maquette desktop du thème DEVM5. Les objectifs visés pour ce projet ? Focus sur le référencement, l’optimisation et l’accessibilité, ainsi que la réalisation d’animations et la gestion d’évènements. Et les résultats sont au vert !",
     "technologies": [
@@ -125,14 +133,15 @@
     "githubLink": "https://github.com/stephaniearlt/Devm5",
     "websiteLink": "https://stephaniearlt.github.io/Devm5/",
     "lighthouseScores": {
-      "performance": "98",
-      "accessibility": "96",
-      "bestPractices": "96",
-      "seo": "100"
+      "performance": 98,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 100
     },
     "image": "devm5.webp"
   },
   {
+    "id": 9,
     "title": "Hexal",
     "description": "Aux premiers abords, Hexal semblait être un projet d’intégration d’une maquette graphique simple à réaliser. Incorporer des formes hexagonales nécessite toutefois de connaitre certaines pratiques d’animations CSS ! Seule une version desktop existe à ce jour.",
     "technologies": [
@@ -142,14 +151,15 @@
     "githubLink": "https://github.com/stephaniearlt/Hexal",
     "websiteLink": "https://stephaniearlt.github.io/Hexal/",
     "lighthouseScores": {
-      "performance": "75",
-      "accessibility": "83",
-      "bestPractices": "96",
-      "seo": "91"
+      "performance": 75,
+      "accessibility": 83,
+      "bestPractices": 96,
+      "seo": 91
     },
     "image": "hexal.webp"
   },
   {
+    "id": 10,
     "title": "OhMyFood",
     "description": "L’application Ohmyfood répertorie les menus de restaurants gastronomiques, permet aux utilisateurs de mettre en favori leurs établissements préférés et de composer leur menu. Ce projet m’a permis de renforcer mes compétences en CSS moderne avec l’utilisation de Sass pour un code structuré et maintenable, ainsi qu'en intégration d’animations CSS pour une expérience utilisateur interactive. J’ai également approfondi l'utilisation de Figma pour garantir une correspondance précise entre la conception et l'interface mobile-first que j’ai développée.",
     "technologies": [
@@ -159,14 +169,15 @@
     "githubLink": "https://github.com/stephaniearlt/Ohmyfood",
     "websiteLink": "https://stephaniearlt.github.io/Ohmyfood/",
     "lighthouseScores": {
-      "performance": "74",
-      "accessibility": "96",
-      "bestPractices": "100",
-      "seo": "91"
+      "performance": 74,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 91
     },
     "image": "ohmyfood.webp"
   },
   {
+    "id": 11,
     "title": "Booki",
     "description": "La startup Booki souhaitait créer un site permettant aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Pour ce projet, j'ai réalisé ma première intégration web complète sans recourir à des frameworks ni CMS comme WordPress. J'ai développé une page d’accueil entièrement responsive pour mobile et tablette, tout en respectant les bonnes pratiques du W3C pour assurer la qualité et l'accessibilité du site.",
     "technologies": [
@@ -176,10 +187,10 @@
     "githubLink": "https://github.com/stephaniearlt/Booki",
     "websiteLink": "https://stephaniearlt.github.io/Booki/",
     "lighthouseScores": {
-      "performance": "100",
-      "accessibility": "100",
-      "bestPractices": "100",
-      "seo": "91"
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 91
     },
     "image": "booki.webp"
   }

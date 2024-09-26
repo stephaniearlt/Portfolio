@@ -18,7 +18,8 @@
   @include small-screen-padding;
 
   .methodology-image {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;

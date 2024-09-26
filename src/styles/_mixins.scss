@@ -10,6 +10,11 @@
   flex-direction: column;
 }
 
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin container-style {
   padding: 2rem;
   @include flex-column;

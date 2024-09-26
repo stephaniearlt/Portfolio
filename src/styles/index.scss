@@ -9,6 +9,7 @@
 @import "./components/aboutPage";
 @import "./components/contactPage";
 @import "./components/darkMode";
+@import "./components/notFound";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 /* GENERALITES */
@@ -29,7 +30,16 @@ body {
 
 .app {
   @include flex-column;
+  flex: 1;
+  @include flex-center;
+}
+
+.main-centered {
+  @include flex-column;
+  @include flex-center;
   height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 h1 {
@@ -49,26 +59,100 @@ p {
   line-height: 1.5;
 }
 
-/* MAIN */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-// Style spécifique pour la page d'accueil
+/********** ACCESSIBILITÉ **********/
 
-.main-centered {
+/* LIEN D'ÉVITEMENT */
+
+.skip-link {
+  position: absolute; 
+  left: -9999px; 
+}
+
+.skip-link:focus {
+  left: 10px; 
+  top: 10px; 
+  background: $color-white;
+  color: $color-text-dark; 
+  padding: 5px; 
+  z-index: 1000; 
+}
+
+/* LECTEUR D'ÉCRAN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/********** SPÉCIFICITÉS COMMUNES **********/
+
+/* NAVIGATION */
+
+nav {
   display: flex;
-}
-
-// Style pour les autres pages
-
-main {
-  flex: 1;
-}
-
-.main-default {
+  align-items: center;
+  background-color: $color-black;
   padding: 1em;
-  overflow-y: auto; /* Permet le défilement si le contenu dépasse */
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  width: 100vw;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-/* Style pour la barre de défilement */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+
+  @media (max-width: 426px) {
+    margin: 10px auto;
+  }
+}
+
+.button, button {
+  background-color: $color-electric-blue;
+  font-family: "Courier Prime", monospace;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $color-text-dark;
+
+  &:hover {
+    background-color: darken($color-electric-blue, 10%);
+  }
+}
+
+/* INTRO */
+
+.intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+/* STYLE POUR LA BARRE DE DÉFILEMENT */
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -84,56 +168,8 @@ main {
   scrollbar-color: $color-electric-blue;
 }
 
-/* INTRO */
-
-.intro {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 1000px;
-  text-align: left;
+.link:focus {
+  outline: 2px solid $color-electric-blue;
 }
 
-/* NAVIGATION */
 
-footer {
-  display: flex;
-  align-items: center;
-  background-color: $color-black;
-  padding: 1em;
-  position: relative;
-  justify-content: center;
-}
-
-.logo-button {
-  margin-right: auto;
-}
-
-.logo {
-  height: 25px;
-}
-
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  flex-wrap: wrap;
-
-  @media (max-width: 426px) {
-    margin: 10px auto;
-  }
-}
-
-button {
-  background-color: $color-electric-blue;
-  font-family: "Courier Prime", monospace;
-  border: none;
-  padding: 0.5em 1em;
-  margin: 0.5em;
-  cursor: pointer;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: darken($color-electric-blue, 10%);
-  }
-}

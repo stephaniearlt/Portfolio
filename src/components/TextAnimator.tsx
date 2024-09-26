@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from "react";
-import SocialMedia from "./SocialMedia";
 
-const dynamicTexts = [
+// Définition des types pour les textes dynamiques
+interface DynamicText {
+  text: string;
+  image: string;
+}
+
+// Liste des textes dynamiques
+const dynamicTexts: DynamicText[] = [
   { text: "JavaScript", image: "/images/javascript.webp" },
   { text: "React", image: "/images/react.webp" },
   { text: "WordPress", image: "/images/wordpress.webp" },
-  { text: "Spécialisée en Accessibilité", image: "/images/accessibility.webp" },
+  { text: "En Accessibilité", image: "/images/accessibility.webp" },
 ];
 
-function TextAnimator() {
-  const [index, setIndex] = useState(0);
-  const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [showImage, setShowImage] = useState(null);
-  const [imageClass, setImageClass] = useState("");
+const TextAnimator: React.FC = () => {
+  const [index, setIndex] = useState<number>(0);
+  const [text, setText] = useState<string>("");
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
+  const [showImage, setShowImage] = useState<string | null>(null);
+  const [imageClass, setImageClass] = useState<string>("");
 
   useEffect(() => {
     const currentText = dynamicTexts[index].text;
@@ -51,23 +57,29 @@ function TextAnimator() {
   return (
     <div className="text-animator-container">
       <div className="text-animator">
-        <p>Je suis développeuse</p>
-        <p className="dynamic-text">{text}</p>
+        <h1>Je suis développeuse</h1>
+        {/* 
+        Attributs ARIA pour l'accessibilité :
+        - `role="status"` : Informe l'utilisateur d'un changement d'état.
+        - `aria-live="polite"` : Annonce les mises à jour à l'utilisateur via lecteurs d'écran.
+      */}
+        <div role="status" aria-live="polite" className="dynamic-text">
+          {text}
+        </div>
       </div>
       <div className="image-container">
         {showImage && (
           <img
             src={showImage}
-            alt={dynamicTexts[index].text}
+            alt={`Logo de ${dynamicTexts[index].text}`}
             className={`animated-image ${imageClass}`}
+            width="100"
+            height="100"
           />
         )}
       </div>
-      <div>
-        <SocialMedia />
-      </div>
     </div>
   );
-}
+};
 
 export default TextAnimator;

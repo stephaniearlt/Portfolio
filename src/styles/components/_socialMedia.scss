@@ -5,8 +5,11 @@
   border-radius: 10px;
   background-color: $color-light-gray;
   width: 300px;
-  height: auto;
   margin-top: 4rem;
+
+  @media (max-width: 321px) {
+    width: 250px;
+  }
 
   a {
     display: block;

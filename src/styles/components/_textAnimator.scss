@@ -1,15 +1,19 @@
 .text-animator-container {
-  position: relative;
   @include flex-column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .text-animator {
   font-size: 4em;
   text-align: center;
-  position: relative;
+
+  h1 {
+    font-size: 1em;
+    font-weight: normal;
+  }
 
   p {
     margin: 0;
@@ -25,12 +29,10 @@
 }
 
 .dynamic-text {
-  width: 100%;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   font-weight: $font-weight-bold;
-  border-right: none;
   animation: none;
   min-height: 1.5em;
 

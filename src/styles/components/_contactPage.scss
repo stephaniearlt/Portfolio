@@ -25,7 +25,8 @@
       @include small-screen-padding;
 
       .reason-image {
-        width: 150px;
+        width: 100%;
+        max-width: 150px;
         height: auto;
         margin-bottom: 1rem;
       }
