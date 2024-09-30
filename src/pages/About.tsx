@@ -8,6 +8,7 @@ import {
   faCss3Alt,
   faHtml5,
 } from "@fortawesome/free-brands-svg-icons";
+import FocusHandler from "../components/FocusHandler";
 
 // Définition d'une interface pour les compétences techniques
 interface TechIcon {
@@ -26,6 +27,7 @@ const About: React.FC = () => {
   ];
 
   return (
+    <FocusHandler navLinkSelector='nav a[href="/a-propos"]'>
     <main className="about-container" role="main">
       <h1>À propos</h1>
       <p className="intro">
@@ -109,6 +111,7 @@ const About: React.FC = () => {
         </article>
       </section>
     </main>
+    </FocusHandler>
   );
 };
 
