@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FocusHandler from "../components/FocusHandler";
 
 const reason1 = "/images/ensemble.webp";
@@ -6,6 +6,16 @@ const reason2 = "/images/idee.webp";
 const reason3 = "/images/progression.webp";
 
 const Contact: React.FC = () => {
+
+const [email, setEmail] = useState("");
+
+useEffect(() => {
+    // Obfuscation de l'email avec un encodage simple par Base64
+    const encodedEmail = "Y29udGFjdEBzdGVwaGFuaWVhcmx0LmZy"; 
+    const decodedEmail = atob(encodedEmail); 
+    setEmail(decodedEmail);
+  }, []);
+
   return (
     <FocusHandler navLinkSelector='nav a[href="/contact"]'>
       <main className="contact-container" role="main">
@@ -20,11 +30,11 @@ const Contact: React.FC = () => {
           S'il vous a plu et que vous avez un projet en
           réflexion, n'hésitez pas à m'écrire à{" "}
           <a
-            href="mailto:contact@stephaniearlt.fr"
+            href={`mailto:${email}`}
             className="link"
             rel="noopener noreferrer"
           >
-            contact@stephaniearlt.fr
+            {email || "loading..."}
           </a>
           . Je lis tous les messages et m’efforce d’y répondre sous trois jours
           ouvrés. Pour découvrir l'ensemble de mes prestations (ou les mentions
