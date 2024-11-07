@@ -31,13 +31,33 @@ body {
 .app {
   @include flex-column;
   flex: 1;
-  @include flex-center;
+
+  /* Pour les très grands écrans (2560px, 1440px) */
+  @media (min-width: 1440px) {
+    @include flex-center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  /* Version pour les écrans entre 768px et 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 5rem 5rem 5rem; 
+  }
+
+  /* Version pour les écrans entre 425px et 768px */
+  @media (min-width: 425px) and (max-width: 767px) {
+    padding: 5rem 0 10rem; 
+  }
+
+  /* Pour les très petits écrans, entre 320px et 425px */
+  @media (max-width: 425px) {
+    padding: 5rem 0 12.5rem; 
+  }
 }
 
 .main-centered {
   @include flex-column;
   @include flex-center;
-  height: 100%;
   width: 100%;
   text-align: center;
 }
@@ -70,17 +90,17 @@ ul {
 /* LIEN D'ÉVITEMENT */
 
 .skip-link {
-  position: absolute; 
-  left: -9999px; 
+  position: absolute;
+  left: -9999px;
 }
 
 .skip-link:focus {
-  left: 10px; 
-  top: 10px; 
+  left: 10px;
+  top: 10px;
   background: $color-white;
-  color: $color-text-dark; 
-  padding: 5px; 
-  z-index: 1000; 
+  color: $color-text-dark;
+  padding: 5px;
+  z-index: 1000;
 }
 
 /* LECTEUR D'ÉCRAN */
@@ -102,15 +122,16 @@ ul {
 
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: $color-black;
   padding: 1em;
   position: fixed;
   bottom: 0;
-  left: 0; 
+  left: 0;
   right: 0;
-  width: 100vw;
-  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
   box-sizing: border-box;
 }
 
@@ -120,12 +141,15 @@ nav {
   flex: 1;
   flex-wrap: wrap;
 
+
   @media (max-width: 426px) {
     margin: 10px auto;
+    gap: 1.5em;
   }
 }
 
-.button, button {
+.button,
+button {
   background-color: $color-electric-blue;
   font-family: "Courier Prime", monospace;
   border: none;
@@ -138,6 +162,10 @@ nav {
 
   &:hover {
     background-color: darken($color-electric-blue, 10%);
+  }
+
+  @media (max-width: 426px) {
+    font-size: 0.9rem; 
   }
 }
 
@@ -155,6 +183,7 @@ nav {
 
 ::-webkit-scrollbar {
   width: 5px;
+  background-color: $color-black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -171,5 +200,3 @@ nav {
 .link:focus {
   outline: 2px solid $color-electric-blue;
 }
-
-
